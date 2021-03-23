@@ -95,9 +95,29 @@
                     <view key="view" contentMode="scaleToFill" id="Zkv-d4-j0e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmr-Aw-imh">
+                                <rect key="frame" x="12" y="56" width="390" height="794"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3w3-It-8Il"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3w3-It-8Il" firstAttribute="trailing" secondItem="wmr-Aw-imh" secondAttribute="trailing" constant="12" id="7i1-03-qhP"/>
+                            <constraint firstItem="wmr-Aw-imh" firstAttribute="leading" secondItem="3w3-It-8Il" secondAttribute="leading" constant="12" id="FAk-b0-gP1"/>
+                            <constraint firstItem="3w3-It-8Il" firstAttribute="trailing" secondItem="wmr-Aw-imh" secondAttribute="trailing" constant="12" id="SCJ-GC-ChM"/>
+                            <constraint firstItem="3w3-It-8Il" firstAttribute="bottom" secondItem="wmr-Aw-imh" secondAttribute="bottom" constant="12" id="TD4-Ik-cZv"/>
+                            <constraint firstItem="wmr-Aw-imh" firstAttribute="top" secondItem="3w3-It-8Il" secondAttribute="top" constant="12" id="VBb-1a-awm"/>
+                            <constraint firstItem="wmr-Aw-imh" firstAttribute="leading" secondItem="3w3-It-8Il" secondAttribute="leading" constant="12" id="kTa-nT-3q7"/>
+                            <constraint firstItem="wmr-Aw-imh" firstAttribute="top" secondItem="3w3-It-8Il" secondAttribute="top" constant="12" id="vVi-l6-Yi4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="wmr-Aw-imh" id="XWq-Ka-e9Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcZ-jV-S5P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
